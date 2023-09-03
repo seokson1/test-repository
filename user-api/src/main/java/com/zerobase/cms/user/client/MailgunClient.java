@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Qualifier("mailgun")
 public interface MailgunClient {
 
-    @PostMapping("sandboxfbedf43475ad43d69e16015528d6446e.mailgun.org/messages")
+    @PostMapping("API참조.mailgun.org/messages")
     ResponseEntity<String> sendEmail(@SpringQueryMap SendMailForm form);
 
 }
